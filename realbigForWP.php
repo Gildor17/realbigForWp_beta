@@ -135,9 +135,8 @@ try {
 	require 'plugin-update-checker/plugin-update-checker.php';
 	$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 		'https://github.com/Gildor17/realbigForWp_beta',
-		__FILE__,
-        'realbigForWp_beta'
-	);
+		__FILE__
+    );
 	/****************** end of updater code *******************************************************************************/
 	/********** checking and creating tables ******************************************************************************/
 	if (empty(apply_filters('wp_doing_cron', defined('DOING_CRON')&&DOING_CRON))) {
