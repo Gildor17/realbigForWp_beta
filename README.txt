@@ -1,4 +1,4 @@
-=== Realbig For WordPress ===
+=== Realbig For WordPress Beta GitHub ===
 Contributors: 101
 Tags: AD, content filling
 Requires at least: 4.5
