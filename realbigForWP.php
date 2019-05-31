@@ -13,7 +13,7 @@ include (dirname(__FILE__)."/textEditing.php");
 /*
 Plugin name:  Realbig Media Beta Git version
 Description:  Плагин для монетизации от RealBig.media
-Version:      0.0.0003
+Version:      0.0.0004
 Author:       Realbig Team
 Author URI:   https://realbig.media
 License:      GPLv2 or later
@@ -126,7 +126,7 @@ try {
 	if (!empty($pluginData['Version'])) {
 		$GLOBALS['realbigForWP_version'] = $pluginData['Version'];
 	} else {
-		$GLOBALS['realbigForWP_version'] = '0.0.0003';
+		$GLOBALS['realbigForWP_version'] = '0.0.0001';
 	}
 	$lastSuccessVersionGatherer = get_option('realbig_status_gatherer_version');
 //	require_once( 'synchronising.php' );
@@ -135,7 +135,8 @@ try {
 	require 'plugin-update-checker/plugin-update-checker.php';
 	$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 		'https://github.com/Gildor17/realbigForWp_beta',
-		__FILE__
+		__FILE__,
+        'realbigForWp_beta'
 	);
 	/****************** end of updater code *******************************************************************************/
 	/********** checking and creating tables ******************************************************************************/
